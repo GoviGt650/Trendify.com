@@ -1,0 +1,351 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Container */
+.navbar-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Top Banner Section */
+  .top-banner {
+    background-color: #f05a22;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /* Middle Section */
+  .middle-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust logo size */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    color: #f05a22;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons a {
+    color: #000;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .icons a:hover {
+    color: #f05a22;
+  }
+  
+  /* Search Bar Container */
+  .search-container {
+    display: none; /* Hidden initially */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.3s ease-in-out;
+    width: 0; /* Start with 0 width */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000; /* Make sure it appears above other content */
+  }
+  
+  .search-container.active {
+    display: block; /* Show search bar when active */
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .search-bar {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding-right: 30px; /* Space for clear button */
+}
+
+
+
+
+/* Style for the Clear Button */
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  color: #f05a22; /* Change color on hover */
+}
+  
+  
+  .search-bar:focus {
+    outline: none;
+    border-color: #f05a22;
+  }
+  
+  /* Bottom Section */
+  .bottom-nav {
+    background-color: #002a5c;
+    padding: 10px;
+  }
+  
+  .category-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .category-links li {
+    margin: 0 15px;
+  }
+  
+  .category-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .category-links a:hover {
+    color: #f05a22;
+  }
+  
+ 
+
+/* Ensure slider container takes full width */
+.slider {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Image styling to make them responsive */
+.slider img {
+  width: 100%;
+  height: auto;
+  display: block;  /* Ensures no extra space around images */
+  object-fit: cover; /* Keeps images within the container without distortion */
+  cursor: pointer;
+}
+
+/* Center dots for navigation */
+.slick-dots {
+  bottom: 15px;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #ddd;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+}
+
+.new-arrivals {
+  cursor: pointer;
+}
+
+.responsive-div {
+  position: relative; /* Make the div the reference for absolute positioning */
+  width: 100%; /* Full width */
+}
+
+.responsive-div img {
+  width: 100%; /* Make the image fill the div */
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the div without distortion */
+  display: block; /* Prevent any unwanted spacing below the image */
+}
+
+.overlay-button {
+  position: absolute; /* Position the button relative to the div */
+  bottom: 20px; /* Place the button 20px from the bottom of the div */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Ensure the button is exactly centered */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove default border */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Optional: Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.overlay-button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Button background on hover */
+}
+
+
+
+
+/* Featured Products Section */
+
+.text-center {
+  color: #ad3400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.text-primary {
+    font-size: 16px;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.btn-primary {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/*
+.deal-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+  */
+
+
+/* Button Styling */
+.deal-btn,
+.add-to-cart-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deal-btn {
+  background-color: #007bff;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+}
+
+.deal-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+ 
+/* Responsive adjustments for small screens */
+@media (max-width: 1024px) {
+  .slider img {
+      padding: 0 10px; /* Add some side padding on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider img {
+      padding: 0 5px; /* Add smaller padding on small screens */
+  }
+
+  .slick-dots li button:before {
+      font-size: 8px; /* Smaller dot size for mobile */
+  }
+}
